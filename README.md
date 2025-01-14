@@ -2,61 +2,48 @@
 
 ## Description
 
-Bataille Navale is a classic battleship game implemented using Python with a graphical interface built with Tkinter. The project is structured into multiple modules, each handling specific functionalities to ensure clarity and maintainability.
+Le jeu bataille Navale est un jeu classique de bataille navale codé en Python avec une interface graphique construite avec Tkinter. Le projet est structuré en plusieurs modules, chacun gérant des fonctionnalités spécifiques pour qu'il puisse être lisible et clair.
 
-## Project Structure
+## Structure du Projet
 
-The codebase is organized into several modules and a main file as follows:
+Le code est organisé en plusieurs modules et un fichier principal comme suit :
 
-- **`navire.py`**: Contains the `Navire` class, representing a ship in the game.
-- **`plateau.py`**: Contains the `Plateau` class, managing the game board.
-- **`joueur.py`**: Contains the `Joueur` class, managing players and their actions.
-- **`interface.py`**: Contains the `ApplicationBatailleNavale` class, handling the user interface and interactions using Tkinter.
-- **`main.py`**: Initializes the application and starts the game.
+- **`navire.py`** : Contient la classe `Navire`, représentant un navire dans le jeu
+- **`plateau.py`** : Contient la classe `Plateau`, gérant le plateau de jeu
+- **`joueur.py`** : Contient la classe `Joueur`, gérant les joueurs et leurs actions
+- **`interface.py`** : Contient la classe `ApplicationBatailleNavale`, gérant l'interface utilisateur et les interactions avec Tkinter
+- **`main.py`** : Initialise l'application et démarre le jeu
 
-## Module Details
+## Détails des Modules
 
 ### navire.py
 
-This module defines the `Navire` class, which represents a ship in the game.
+Ce module définit la classe `Navire`, qui représente un navire dans le jeu
 
-- **Attributes**:
-  - `nom`: Name of the ship.
-  - `taille`: Size of the ship.
-  - `positions`: List of the ship's positions on the board.
-  - `positions_touchees`: Set of the ship's positions that have been hit.
+- **Attributs** :
+  - `nom` : Nom du navire
+  - `taille` : Taille du navire
+  - `positions` : Liste des positions du navire sur le plateau
+  - `positions_touchees` : Ensemble des positions du navire qui ont été touchées
 
 ### plateau.py
 
-This module defines the `Plateau` class, which manages the game board.
+Ce module définit la classe `Plateau`, qui gère le plateau de jeu
 
-- **Attributes**:
-  - `taille`: Size of the board (10x10).
-  - `grille`: Representation of the board grid.
-  - `navires`: List of ships placed on the board.
+- **Attributs** :
+  - `taille` : Taille du plateau (10x10)
+  - `grille` : Représentation de la grille du plateau
+  - `navires` : Liste des navires placés sur le plateau
 
 ### joueur.py
 
-This module defines the `Joueur` class, which represents a player in the game.
+Ce module définit la classe `Joueur`, qui représente un joueur dans le jeu
 
-- **Attributes**:
-  - `nom`: Name of the player.
-  - `plateau`: Game board associated with the player.
-  - `est_humain`: Boolean indicating whether the player is human.
+- **Attributs** :
+  - `nom` : Nom du joueur
+  - `plateau` : Plateau de jeu associé au joueur
+  - `est_humain` : Booléen indiquant si le joueur est humain
 
 ### interface.py
 
-This module contains the `ApplicationBatailleNavale` class, which is the main class for the game's user interface. It handles grid creation, user interactions, and game flow using Tkinter.
-
-## How to Run
-
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Run `main.py` to start the game.
-
-```bash
-python main.py
-
-
-
-    
+Ce module contient la classe `ApplicationBatailleNavale`, qui est la classe principale pour l'interface utilisateur du jeu. Elle gère la création des grilles, les interactions avec l'utilisateur et le déroulement du jeu via Tkinter
